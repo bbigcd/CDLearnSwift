@@ -14,7 +14,7 @@ class BaseViewContrller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.blue
+        self.view.addSubview(tableView)
         tableView.frame = self.view.bounds
         tableView.reloadData()
         // Do any additional setup after loading the view.
