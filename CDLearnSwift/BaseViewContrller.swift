@@ -28,6 +28,7 @@ class BaseViewContrller: UIViewController {
     func initTableView(){
         // 初始化tableView的数据
         self.tableView = UITableView(frame:self.view.frame, style:UITableViewStyle.plain)
+        self.tableView.tableFooterView = UIView.init()
         // 设置tableView的数据源
         self.tableView.dataSource = self
         // 设置tableView的委托
@@ -59,7 +60,8 @@ extension BaseViewContrller : UITableViewDelegate{
 //        guard let cell = tableView.cellForRow(at: indexPath) as? UITableViewCell else{
 //            return
 //        }
-        
-        
+        NSLog("\(indexPath)")
+        tableView.deselectRow(at: indexPath,animated: true)
+        self.navigationController?.pushViewController(UIKitViewController(), animated: true)
     }
 }
