@@ -12,10 +12,12 @@ import UIKit
 class BaseViewContrller: UIViewController {
     var tableView = UITableView()
     static var cellIdentifier = "cell"
-    var items : [String] = ["UIKits"]
+    var items : [String] = ["UIKitViewController",
+                            "TestViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "CDLearnSwift"
         initTableView()
         // Do any additional setup after loading the view.
     }
@@ -57,11 +59,14 @@ extension BaseViewContrller : UITableViewDataSource{
 
 extension BaseViewContrller : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        guard let cell = tableView.cellForRow(at: indexPath) as? UITableViewCell else{
-//            return
-//        }
-        NSLog("\(indexPath)")
+        // NSLog("\(indexPath)")
         tableView.deselectRow(at: indexPath,animated: true)
-        self.navigationController?.pushViewController(UIKitViewController(), animated: true)
+        // Swfit 中NSClassFromString使用的时候需要注意的是，()中的结构为 "App的包名.
+        let module = Bundle.main.infoDictionary!["CFBundleExecutable"] as! String
+        let classString = module + "." + items[indexPath.row]
+        let vcString = NSClassFromString(classString) as! UIViewController.Type
+        self.navigationController?.pushViewController(vcString.init(), animated: true)
     }
+    
+   
 }
