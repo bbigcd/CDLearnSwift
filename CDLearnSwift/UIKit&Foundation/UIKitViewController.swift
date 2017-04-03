@@ -11,9 +11,14 @@ import UIKit
 class UIKitViewController: UIViewController{
     var scrollView = UIScrollView()
     var headImageView = UIImageView()
+    var textArr = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        textArr = ["About Us",
+                   "Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:",
+                   "Whether you are looking for a turn-of-the-century wall set or a Zack Morris Special, we've got you covered. Give us a ring, and we will get you connected. ",
+                   "*Hands-free phones available"]
         initScrollView()
         addUIToScrollView()
         view.backgroundColor = UIColor.white
@@ -34,20 +39,38 @@ class UIKitViewController: UIViewController{
         scrollView.addSubview(headImageView)
         
         let label1Frame = CGRect.init(x: 0, y: 145, width: view.bounds.size.width, height: 40)
-        let label1 = UILabel.init(frame : label1Frame)
-        label1.textAlignment = NSTextAlignment.center
-        label1.text = "About Us"
-        label1.font = UIFont.init(name: "Damascus", size: 28)
-        scrollView.addSubview(label1)
+        let label1 = createdLabel(label1Frame, 28, "Damascus", NSTextAlignment.center, textArr[0] as! String)
+        scrollView.addSubview(label1!)
+        
         
         let label2Frame = CGRect.init(x: 50, y: 165, width: view.bounds.size.width - 100, height: 125)
-        let label2 = UILabel.init(frame: label2Frame)
-        label2.textAlignment = NSTextAlignment.left
-        label2.text = "Good as Old Phones returns the phones of  yesteryear back to their original glory and then gets them into the hands* of those who appreciate them most:"
-        label2.numberOfLines = 0
-        scrollView.addSubview(label2)
+        let label2 = createdLabel(label2Frame, 17, "system", NSTextAlignment.left, textArr[1] as! String)
+        scrollView.addSubview(label2!)
+        
+        
+        let label3Frame = CGRect.init(x: 50, y: 265, width: view.bounds.size.width - 100, height: 125)
+        let label3 = createdLabel(label3Frame, 17, "system", NSTextAlignment.left, textArr[2] as! String)
+        scrollView.addSubview(label3!)
+        
+        let label4Frame = CGRect.init(x: 50, y: 335, width: view.bounds.size.width - 100, height: 125)
+        let label4 = createdLabel(label4Frame, 17, "system", NSTextAlignment.left, textArr[3] as! String)
+        scrollView.addSubview(label4!)
         
     }
+    
+    func createdLabel(_ frame:CGRect,
+                      _ fontSize:CGFloat,
+                      _ fontName:String,
+                      _ textAlignment:NSTextAlignment,
+                      _ text:String) -> UILabel?{
+        let label = UILabel.init(frame: frame)
+        label.numberOfLines = 0
+        label.font = UIFont.init(name: fontName, size: fontSize)
+        label.text = text
+        label.textAlignment = textAlignment
+        return label;
+    }
+    
 
 }
 
