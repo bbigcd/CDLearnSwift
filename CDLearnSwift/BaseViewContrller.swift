@@ -12,7 +12,7 @@ import UIKit
 class BaseViewContrller: UIViewController {
     var tableView = UITableView()
     static var cellIdentifier = "cell"
-    var items : [String] = ["UIKitViewController"]
+    var items : [String] = ["UIKitViewController","ProductsTableViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
