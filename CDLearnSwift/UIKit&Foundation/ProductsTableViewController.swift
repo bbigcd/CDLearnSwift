@@ -69,7 +69,11 @@ class ProductsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog("\(indexPath.row)")
+//        NSLog("\(indexPath.row)")
+        let vc = ProductViewController()
+        vc.product = products?[(indexPath as NSIndexPath).row]
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*
