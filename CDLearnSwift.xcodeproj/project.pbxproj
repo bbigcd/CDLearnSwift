@@ -12,6 +12,8 @@
 		54398A281E8820440063CF16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54398A261E8820440063CF16 /* LaunchScreen.storyboard */; };
 		54398A3A1E8824320063CF16 /* BaseViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54398A391E8824320063CF16 /* BaseViewContrller.swift */; };
 		543B612E1E8ABE460076EB0E /* UIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B612D1E8ABE460076EB0E /* UIKitViewController.swift */; };
+		54692A1E1E9BD8F20090BFD0 /* UIControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54692A1C1E9BD8F20090BFD0 /* UIControlViewController.swift */; };
+		54692A1F1E9BD8F20090BFD0 /* UIControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54692A1D1E9BD8F20090BFD0 /* UIControlViewController.xib */; };
 		546B48B71E93F50E002EAA7B /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546B48B61E93F50E002EAA7B /* ProductsTableViewController.swift */; };
 		54E24E9B1E9A819B00C74641 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E24E9A1E9A819B00C74641 /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		54398A291E8820440063CF16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54398A391E8824320063CF16 /* BaseViewContrller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewContrller.swift; sourceTree = "<group>"; };
 		543B612D1E8ABE460076EB0E /* UIKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitViewController.swift; sourceTree = "<group>"; };
+		54692A1C1E9BD8F20090BFD0 /* UIControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIControlViewController.swift; sourceTree = "<group>"; };
+		54692A1D1E9BD8F20090BFD0 /* UIControlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UIControlViewController.xib; sourceTree = "<group>"; };
 		546B48B61E93F50E002EAA7B /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 		54E24E9A1E9A819B00C74641 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +120,8 @@
 				543B612D1E8ABE460076EB0E /* UIKitViewController.swift */,
 				54E24E9A1E9A819B00C74641 /* ProductViewController.swift */,
 				546B48B61E93F50E002EAA7B /* ProductsTableViewController.swift */,
+				54692A1C1E9BD8F20090BFD0 /* UIControlViewController.swift */,
+				54692A1D1E9BD8F20090BFD0 /* UIControlViewController.xib */,
 			);
 			path = "UIKit&Foundation";
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54398A281E8820440063CF16 /* LaunchScreen.storyboard in Resources */,
+				54692A1F1E9BD8F20090BFD0 /* UIControlViewController.xib in Resources */,
 				54398A251E8820440063CF16 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54398A1E1E8820440063CF16 /* AppDelegate.swift in Sources */,
+				54692A1E1E9BD8F20090BFD0 /* UIControlViewController.swift in Sources */,
 				546B48B71E93F50E002EAA7B /* ProductsTableViewController.swift in Sources */,
 				54398A3A1E8824320063CF16 /* BaseViewContrller.swift in Sources */,
 				54E24E9B1E9A819B00C74641 /* ProductViewController.swift in Sources */,
