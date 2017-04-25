@@ -14,7 +14,8 @@ class BaseViewContrller: UIViewController {
     static var cellIdentifier = "cell"
     var items : [String] = ["UIKitViewController",
                             "ProductsTableViewController",
-                            "UIControlViewController"]
+                            "UIControlViewController",
+                            "StopWatchViewController"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

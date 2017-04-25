@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542B316B1EAF9B8300AB66CE /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B31691EAF9B8300AB66CE /* StopWatchViewController.swift */; };
+		542B316C1EAF9B8300AB66CE /* StopWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542B316A1EAF9B8300AB66CE /* StopWatchViewController.xib */; };
 		54398A1E1E8820440063CF16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54398A1D1E8820440063CF16 /* AppDelegate.swift */; };
 		54398A251E8820440063CF16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54398A241E8820440063CF16 /* Assets.xcassets */; };
 		54398A281E8820440063CF16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54398A261E8820440063CF16 /* LaunchScreen.storyboard */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542B31691EAF9B8300AB66CE /* StopWatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
+		542B316A1EAF9B8300AB66CE /* StopWatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StopWatchViewController.xib; sourceTree = "<group>"; };
 		54398A1A1E8820440063CF16 /* CDLearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDLearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54398A1D1E8820440063CF16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54398A241E8820440063CF16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				546B48B61E93F50E002EAA7B /* ProductsTableViewController.swift */,
 				54692A1C1E9BD8F20090BFD0 /* UIControlViewController.swift */,
 				54692A1D1E9BD8F20090BFD0 /* UIControlViewController.xib */,
+				542B31691EAF9B8300AB66CE /* StopWatchViewController.swift */,
+				542B316A1EAF9B8300AB66CE /* StopWatchViewController.xib */,
 			);
 			path = "UIKit&Foundation";
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542B316C1EAF9B8300AB66CE /* StopWatchViewController.xib in Resources */,
 				54398A281E8820440063CF16 /* LaunchScreen.storyboard in Resources */,
 				54692A1F1E9BD8F20090BFD0 /* UIControlViewController.xib in Resources */,
 				54398A251E8820440063CF16 /* Assets.xcassets in Resources */,
@@ -217,6 +224,7 @@
 				546B48B71E93F50E002EAA7B /* ProductsTableViewController.swift in Sources */,
 				54398A3A1E8824320063CF16 /* BaseViewContrller.swift in Sources */,
 				54E24E9B1E9A819B00C74641 /* ProductViewController.swift in Sources */,
+				542B316B1EAF9B8300AB66CE /* StopWatchViewController.swift in Sources */,
 				543B612E1E8ABE460076EB0E /* UIKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
